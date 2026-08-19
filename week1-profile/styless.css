@@ -1,0 +1,199 @@
+/* Reset Basic */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #2d3748;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Container utama rata tengah */
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header & Profil */
+.profile-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.profile-header img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.tagline {
+    font-size: 1.05rem;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* Navigasi */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+}
+
+.nav-links a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Seksi Konten */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #475569;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* Seksi Proyek (Grid Card Layout) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Link Email */
+.link {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Formulir Kontak */
+.contact-form {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.form-group input {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
